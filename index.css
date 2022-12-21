@@ -1,0 +1,496 @@
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes scale-up {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+body {
+  margin: 0;
+  line-height: normal;
+}
+.frame-div {
+  position: absolute;
+  top: calc(50% - 1506.92px);
+  left: calc(50% - 1090px);
+}
+.fruityvpn-logo-icon {
+  position: relative;
+  width: 268px;
+  height: 86px;
+  flex-shrink: 0;
+  object-fit: cover;
+  opacity: 0;
+  transition: 1s;
+}
+.fruityvpn-logo-icon.animate {
+  animation: 1s ease 0s 1 normal forwards slide-in-left;
+}
+.fruityvpn-logo-icon:hover {
+  transition: 1s;
+  scale: 1.05;
+}
+.about,
+.contact,
+.features,
+.home,
+.pricing {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-4xl);
+  line-height: 60%;
+  font-weight: 500;
+  font-family: var(--font-poppins);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+  transition: 0.5s;
+}
+.about:hover,
+.home:hover {
+  letter-spacing: 4px;
+  transition: 0.5s;
+}
+.home:hover {
+  color: var(--color-gray-1900);
+  border-radius: 0;
+  margin-left: -5px;
+}
+.about,
+.contact,
+.features,
+.pricing {
+  left: 86px;
+}
+.about:hover {
+  color: var(--color-gray-300);
+  margin-left: -7px;
+}
+.contact,
+.features,
+.pricing {
+  left: 173px;
+}
+.contact:hover,
+.features:hover,
+.pricing:hover {
+  letter-spacing: 4px;
+  color: var(--color-gray-300);
+  margin-left: -13px;
+}
+.contact,
+.pricing {
+  left: 285px;
+}
+.contact:hover,
+.pricing:hover {
+  transition: 0.5s;
+  margin-left: -11px;
+}
+.contact {
+  left: 380px;
+}
+.contact:hover {
+  margin-left: -9px;
+}
+.frame-div3 {
+  position: relative;
+  width: 458px;
+  height: 11px;
+  flex-shrink: 0;
+  opacity: 0;
+}
+.frame-div3.animate {
+  animation: 1s ease 0s 1 normal forwards slide-in-right;
+}
+.frame-div2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-2xl);
+}
+.protect-your-online {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.with-a-fruity {
+  margin: 0;
+}
+.protect-your-online-data-with {
+  position: relative;
+  line-height: 111.5%;
+  display: inline-block;
+  opacity: 0;
+}
+.protect-your-online-data-with.animate {
+  animation: 1s ease 0s 1 normal forwards slide-in-top;
+}
+.the-1-vpn-service-for-securit {
+  position: relative;
+  font-size: var(--font-size-3xl);
+  font-weight: 500;
+  color: var(--color-gray-100);
+  display: inline-block;
+  opacity: 0;
+}
+.the-1-vpn-service-for-securit.animate {
+  animation: 1s ease 0s 1 normal forwards slide-in-left;
+}
+.frame-div6 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-sm);
+}
+.download-now {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-3xl);
+  font-weight: 500;
+  font-family: var(--font-poppins);
+  color: var(--color-violet-100);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 99px;
+  transition: 1s;
+}
+.download-now:hover {
+  color: var(--color-white);
+}
+.frame-button {
+  cursor: pointer;
+  border: 1px solid var(--color-white);
+  padding: 0;
+  background-color: var(--color-white);
+  position: relative;
+  border-radius: var(--br-sm);
+  box-sizing: border-box;
+  flex-shrink: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+.frame-button.animate {
+  animation: 1s ease 0s 1 normal forwards slide-in-bottom;
+}
+.frame-button:hover {
+  background-color: var(--color-gray-2000);
+  border: 1px solid #99307b;
+  box-sizing: border-box;
+  transition: 1s;
+  transform: scale(1.1);
+}
+.frame-button,
+.frame-button1,
+.learn-more {
+  width: 250px;
+  height: 99px;
+  transition: 1s;
+}
+.learn-more {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-3xl);
+  font-weight: 500;
+  font-family: var(--font-poppins);
+  color: var(--color-white);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.learn-more:hover {
+  color: var(--color-violet-100);
+}
+.frame-button1 {
+  cursor: pointer;
+  border: 1.5px solid var(--color-white);
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  border-radius: var(--br-sm);
+  box-sizing: border-box;
+  flex-shrink: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+.frame-button1.animate {
+  animation: 1s ease 0.4s 1 normal forwards slide-in-bottom;
+}
+.frame-button1:hover {
+  background-color: var(--color-white);
+  transition: 1s;
+  transform: scale(1.1);
+}
+.frame-div5,
+.frame-div7 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame-div7 {
+  flex-direction: row;
+  gap: var(--gap-xs);
+  opacity: 0;
+}
+.frame-div7.animate {
+  animation: 1s ease 0s 1 normal forwards slide-in-bottom;
+}
+.frame-div5 {
+  flex-direction: column;
+  gap: 47px;
+}
+.frame-icon {
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  transition: 1s;
+}
+.frame-icon.animate {
+  animation: 1s ease 0s 1 normal forwards scale-up;
+}
+.frame-icon:hover {
+  transition: 1s;
+  scale: 1.05;
+}
+.frame-div4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.frame-div1,
+.hero-section {
+  width: 1334px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 94px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+.frame-div1 {
+  position: absolute;
+  top: calc(50% - 943px);
+  left: calc(50% - 720px);
+  background: linear-gradient(98.24deg, #ff4bcd, #ff94e1);
+  box-shadow: 0 4px 120px rgba(0, 0, 0, 0.65);
+  width: 1440px;
+  height: 932px;
+  padding: 0 90px 232px 82px;
+  gap: 154px;
+}
+.with-our-vpn-youll-have-acce {
+  position: relative;
+  line-height: 111.5%;
+  display: inline-block;
+  opacity: 0;
+}
+.with-our-vpn-youll-have-acce.animate {
+  animation: 1s ease 0s 1 normal forwards slide-in-right;
+}
+.allows-you-to-container {
+  line-break: anywhere;
+  width: 100%;
+}
+.allows-you-to-access-blocked-o,
+.frame-button2 {
+  width: 343px;
+  height: 171px;
+  flex-shrink: 0;
+  display: flex;
+  transition: 1s;
+}
+.allows-you-to-access-blocked-o {
+  position: relative;
+  font-size: var(--font-size-3xl);
+  font-weight: 500;
+  font-family: var(--font-poppins);
+  color: var(--color-black);
+  text-align: center;
+  align-items: center;
+}
+.allows-you-to-access-blocked-o:hover {
+  color: var(--color-violet-100);
+}
+.frame-button2 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-gray-200);
+  border-radius: var(--br-lg);
+  box-shadow: var(--card-dropshadow);
+  overflow: hidden;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame-button2:hover {
+  box-shadow: 0 4px 20px 8px rgba(255, 75, 205, 0.5);
+  transition: 1s;
+  transform: translateY(-20px);
+}
+.frame-div12,
+.frame-div13 {
+  margin: 0 !important;
+  position: absolute;
+  top: 0;
+  left: 798px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-lg);
+  z-index: 0;
+}
+.frame-div13 {
+  left: 394px;
+  z-index: 1;
+}
+.encrypts-data-to-protect-it-fr,
+.frame-button6 {
+  width: 343px;
+  height: 171px;
+  flex-shrink: 0;
+  transition: 1s;
+}
+.encrypts-data-to-protect-it-fr {
+  position: relative;
+  font-size: var(--font-size-3xl);
+  font-weight: 500;
+  font-family: var(--font-poppins);
+  color: #0f0d0e;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.encrypts-data-to-protect-it-fr:hover {
+  color: var(--color-violet-100);
+}
+.frame-button6 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-gray-200);
+  border-radius: var(--br-lg);
+  box-shadow: var(--card-dropshadow);
+  overflow: hidden;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.frame-button6:hover {
+  box-shadow: 0 4px 20px 8px rgba(255, 75, 205, 0.5);
+  cursor: pointer;
+  transition: 1s;
+  transform: translateY(-20px);
+}
+.frame-button6,
+.frame-div11,
+.frame-div14 {
+  display: flex;
+  justify-content: flex-start;
+}
+.frame-div14 {
+  margin: 0 !important;
+  position: absolute;
+  top: 0;
+  left: -10px;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-lg);
+  z-index: 2;
+}
+.frame-div11 {
+  width: 1178px;
+  flex-direction: row;
+  align-items: flex-start;
+  position: relative;
+  gap: 37px;
+  opacity: 0;
+}
+.frame-div11.animate {
+  animation: 1s ease 0s 1 normal forwards slide-in-right;
+}
+.frame-div8,
+.frame-div9 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.frame-div8 {
+  position: absolute;
+  top: calc(50% + 92px);
+  left: calc(50% - 574px);
+  gap: 74px;
+  text-align: center;
+  color: var(--color-violet-100);
+}
+.fruitvpn-main-screen {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 1886px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-7xl);
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+}
